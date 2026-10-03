@@ -1,0 +1,14 @@
+{
+  "kind": "replay",
+  "source_run": "/home/user/build/runs/demo",
+  "span": [
+    1790553600,
+    1790985600
+  ],
+  "backend": "torch",
+  "params": 51539,
+  "tier": "nano",
+  "dataset": "BTCUSDT 1s | 2017-08-17 -> 2026-10-03 | 288,043,172 bars | 111 chunks | 2,350 MB",
+  "run_id": "replay_holdout",
+  "created": "2026-10-03T18:19:00"
+}

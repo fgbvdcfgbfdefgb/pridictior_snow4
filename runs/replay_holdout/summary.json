@@ -1,0 +1,43 @@
+{
+  "run_id": "replay_holdout",
+  "kind": "replay",
+  "windows": 240,
+  "simulated_days": 5.0,
+  "backend": "torch",
+  "params": 51539,
+  "tier": "nano",
+  "span_utc": [
+    "2026-09-28 00:00",
+    "2026-10-03 00:00"
+  ],
+  "metrics": {
+    "ema": {
+      "n": 1800.0,
+      "mae_permille": 1.4089511910481491,
+      "rmse_permille": 1.6062301524062088,
+      "mape_pct": 0.14109464715896933,
+      "band_accuracy": 0.6303314896653717,
+      "direction_acc": 0.6093183813078635,
+      "r2": -1.7812621862928424,
+      "skill_vs_naive": -0.08974837174591255,
+      "reward": 0.47855797020015095,
+      "bias_permille": 0.8220639170894544,
+      "jitter_permille": 0.001703094178781524,
+      "max_slew_permille": 0.01598846277983833,
+      "sigma_mean": 2.8670132343089723,
+      "calibration": 0.8758766742345968
+    },
+    "best": {
+      "mae_permille": 1.2281523319845422,
+      "rmse_permille": 1.4186858753627734,
+      "mape_pct": 0.12289190299843517,
+      "band_accuracy": 0.6303314896653717,
+      "direction_acc": 0.7364588917316569,
+      "r2": -0.8457625979336809,
+      "skill_vs_naive": 0.19566039072804436,
+      "reward": 2.8222476065511017,
+      "jitter_permille": 0.001058970885819958
+    },
+    "windows": 239
+  }
+}

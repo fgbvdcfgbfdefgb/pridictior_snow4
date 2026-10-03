@@ -1,6 +1,10 @@
 # training output ----------------------------------------------------------
-runs/
+# Your own runs stay local; the two reference runs shipped with the repo are
+# whitelisted so the committed metrics / checkpoints / prediction tape survive.
+runs/*
 !runs/.gitkeep
+!runs/demo/
+!runs/replay_holdout/
 *.log
 
 # scratch -------------------------------------------------------------------
