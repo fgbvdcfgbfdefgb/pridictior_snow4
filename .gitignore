@@ -1,0 +1,26 @@
+# training output ----------------------------------------------------------
+runs/
+!runs/.gitkeep
+*.log
+
+# scratch -------------------------------------------------------------------
+build/
+work/
+tmp/
+.ipynb_checkpoints/
+.DS_Store
+
+# python --------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# never commit credentials --------------------------------------------------
+.env
+*.token
+secrets.json
+.snowflake/

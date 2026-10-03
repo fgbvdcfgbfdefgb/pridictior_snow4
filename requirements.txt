@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# Bitcoin Price Predictor -- dependencies
+#
+# The hard requirement is NumPy. Everything else is optional and the code
+# degrades gracefully without it, which is what lets this train on an
+# air-gapped Snowflake warehouse kernel.
+#
+#   numpy       REQUIRED  dataset codec, analyser, NumPy training backend
+#   pandas      optional  ~5x faster CSV parsing in the downloader
+#   matplotlib  optional  charts, GIF animation, live notebook rendering
+#   pillow      optional  GIF writer for matplotlib
+#   torch       optional  GPU / DDP / AMP training backend
+#   pyarrow     optional  Parquet export of the prediction tape
+#
+# Minimal offline install:        pip install numpy
+# Full local experience:          pip install -r requirements.txt
+# GPU (pick the CUDA build that matches your driver):
+#     pip install torch --index-url https://download.pytorch.org/whl/cu124
+# ---------------------------------------------------------------------------
+numpy>=1.23
+pandas>=1.5
+matplotlib>=3.6
+pillow>=9.0
+torch>=2.0
+pyarrow>=12.0
